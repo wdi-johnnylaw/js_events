@@ -2,10 +2,25 @@ body {
 	width: 600px;
 	background-color: #fff;
 	margin: auto;
+	font-family: Helvetica, sans-serif;
 }
 
 html {
 	background-color: #bbb;
+}
+
+h2 {
+	font-size: 18px;
+	width: 120px;
+	position: absolute;
+	margin: 0;
+	top: 0;
+	color: #4444aa;
+}
+
+li.even h2 {
+	right: 10px;
+	text-align: right;
 }
 
 ul {
@@ -15,6 +30,7 @@ ul {
 }
 
 li {
+	position: relative;
 	margin: 0;
 	text-indent: 0;
 	height: 110px;
@@ -31,11 +47,11 @@ li:last-child {
 }
 
 li.odd {
-	background: url(http://placekitten.com/120/90) 0 18px no-repeat;
+	background: url(http://placekitten.com/120/90) 0 23px no-repeat;
 }
 
 li.even {
-	background: url(http://placekitten.com/120/100) 400px 13px no-repeat;
+	background: url(http://placekitten.com/110/90) 400px 23px no-repeat;
 }
 
 li.odd p {
