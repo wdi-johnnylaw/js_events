@@ -15,27 +15,33 @@ ul {
 }
 
 li {
-	clear: both;
 	margin: 0;
 	text-indent: 0;
-	height: 120px;
+	height: 110px;
 	padding: 20px 0 0 0;
 	border-bottom: 2px solid gray;
 }
 
-li span {
-	font-size: 25px;
+li p {
+	font-size: 22px;
 }
 
 li:last-child {
 	border: none;
 }
-li.odd img {
-	float: left;
-	padding-right: 15px;
+
+li.odd {
+	background: url(http://placekitten.com/120/90) 0 18px no-repeat;
 }
 
-li.even img {
-	float: right;
-	padding-left: 15px;
+li.even {
+	background: url(http://placekitten.com/120/100) 400px 13px no-repeat;
+}
+
+li.odd p {
+	margin-left: 130px;
+}
+
+li.even p {
+	margin-right: 130px;
 }
