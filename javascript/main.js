@@ -1,3 +1,16 @@
+function setUpPage() {
+	var names = document.getElementsByTagName('h2');
+	for(var i=0; i<names.length; i++) { 
+		names[i].onclick = showInfo; 
+	}
+}
+
+function showInfo() {
+	console.log(event);
+	var sender = event.target.parentNode.className;
+	document.getElementById(sender + '-info').style.display = 'block'
+}
+
 function addChatMessage(){
 	var title, message, cssClass, liElement;
 	title = "Title";
