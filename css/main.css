@@ -1,4 +1,5 @@
 body {
+	position: relative;
 	width: 600px;
 	background-color: #fff;
 	margin: auto;
@@ -7,6 +8,20 @@ body {
 
 html {
 	background-color: #bbb;
+}
+
+.info {
+	display: none;
+	position: absolute;
+	top: 100px;
+	left: 180px;
+	height: 150px;
+	width: 200px;
+	margin: auto;
+	padding: 20px;
+	border: 2px solid black;
+	background-color: #fff;
+	z-index: 99;
 }
 
 h2 {
@@ -18,15 +33,17 @@ h2 {
 	color: #4444aa;
 }
 
-li.even h2 {
+li.donny h2 {
 	right: 10px;
 	text-align: right;
 }
 
 ul {
+	height: 475px;
 	list-style: none;
 	padding-right: 40px;
 	margin: 0;
+	overflow: scroll;
 }
 
 li {
@@ -46,18 +63,31 @@ li:last-child {
 	border: none;
 }
 
-li.odd {
-	background: url(http://placekitten.com/120/90) 0 23px no-repeat;
+li.dude {
+	background: url(../images/the-dude.jpg) 0 23px no-repeat;
+	background-size: 100px 100px;
 }
 
-li.even {
-	background: url(http://placekitten.com/110/90) 400px 23px no-repeat;
+li.donny {
+	background: url(../images/donny.jpg) 410px 23px no-repeat;
+	background-size: 110px 100px;
 }
 
-li.odd p {
+li.dude p {
 	margin-left: 130px;
 }
 
-li.even p {
+li.donny p {
 	margin-right: 130px;
+}
+
+#new-message {
+	width: 90%;
+	height: 3em;
+	font-size: 18px;
+}
+
+#new-message-submit {
+	width: 8%;
+	font-size: 35px;
 }

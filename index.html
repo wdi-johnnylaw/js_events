@@ -6,23 +6,35 @@
 	</head>
 
 	<body>
-		<ul>
-			<li class="odd">
+		<div class="info" id="dude-info">
+			<h3>The Dude</h3>
+			<p>The dude abides</p>
+		</div>
+		<div class="info" id="donny-info">
+			<h3>Donny</h3>
+			<p>Donny doesn't necessarily abide, but the dude loves him anyhow.</p>
+		</div>
+		<ul id="chat-list">
+			<li class="dude">
 				<h2>The dude</h2>
 				<p>Hey, who wants Mexican food for lunch?</p>
 			</li>
-			<li class="even">
+			<li class="donny">
 				<h2>Donny</h2>
 				<p>I love dat s*@t. Let's do it!</p>
 			</li>
-			<li class="odd">
+			<li class="dude">
 				<h2>The dude</h2>
 				<p>Okay, I'll see if I can get Lorin to pipe down so we can get outta here!</p>
 			</li>
-			<li class="even">
+			<li class="donny">
 				<h2>Donny</h2>
 				<p>I think he had a lot of coffee this morning; it's gonna be tough!</p>
 			</li>
 		</ul>
+		<fieldset>
+			<textarea id="new-message"></textarea>
+			<input id="new-message-submit" type="button" value="Send" />
+		</fieldset>
 	</body>
 </html>
