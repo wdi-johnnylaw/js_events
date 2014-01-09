@@ -1,0 +1,41 @@
+body {
+	width: 600px;
+	background-color: #fff;
+	margin: auto;
+}
+
+html {
+	background-color: #bbb;
+}
+
+ul {
+	list-style: none;
+	padding-right: 40px;
+	margin: 0;
+}
+
+li {
+	clear: both;
+	margin: 0;
+	text-indent: 0;
+	height: 120px;
+	padding: 20px 0 0 0;
+	border-bottom: 2px solid gray;
+}
+
+li span {
+	font-size: 25px;
+}
+
+li:last-child {
+	border: none;
+}
+li.odd img {
+	float: left;
+	padding-right: 15px;
+}
+
+li.even img {
+	float: right;
+	padding-left: 15px;
+}
