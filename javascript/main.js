@@ -5,6 +5,10 @@ function setUpPage() {
 	}
 }
 
+function closeInfo() {
+  event.target.style.display = 'none';
+}
+
 function showInfo() {
 	console.log(event);
 	var sender = event.target.parentNode.className;
