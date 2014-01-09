@@ -14,12 +14,16 @@ function getNewMessage() {
 	return input.value;
 }
 
-function getNextSender() {
-	var messages = document.getElementsByTagName('li');
-	var lastMessage = messages[messages.length - 1];
-	if(lastMessage.className === 'donny') {
+function messageSender(el) {
+	if(el.className === 'donny') {
 		return 'dude';
 	} else {
 		return 'donny';
 	}
+}
+
+function getNextSender() {
+	var messages = document.getElementsByTagName('li');
+	var lastMessage = messages[messages.length - 1];
+	return messageSender(lastMessage);
 }
